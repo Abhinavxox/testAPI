@@ -69,6 +69,27 @@ curl -X GET "http://localhost:8080/api/v1/commands/?keyword=ls&details=true"
 
 ---
 
+## Directory Structure
+
+```plaintext
+├── server.js
+├── app.js
+├── models
+│   └── Commands.js
+├── routes
+│   └── commandRoutes.js
+├── controllers
+│   └── commandController.js
+├── services
+│   └── commandService.js
+├── .env
+├── dockerfile
+├── docker-compose.yml
+├── package.json
+├── nodemon.json
+└── README.md
+```
+
 ## Samples:
 
 ### Bash Shell
