@@ -21,9 +21,8 @@ const shutdown = async () => {
     console.error("Error closing MongoDB connection:", error);
   }
 
-  process.exit(0); // Exit process with success
+  process.exit(0);
 };
 
-// Handle termination signals
-process.on("SIGINT", shutdown); // For Ctrl+C
-process.on("SIGTERM", shutdown); // For Docker stop or similar
+process.on("SIGINT", shutdown);
+process.on("SIGTERM", shutdown);
