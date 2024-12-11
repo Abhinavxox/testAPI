@@ -3,7 +3,7 @@ const logger = require("../utils/logger");
 
 // Save a command
 exports.storeCommand = async (command) => {
-  if (!command || command.length < 1) {
+  if (!command || command.length < 2) {
     logger.error(
       "Failed to save command: Command must be at least 1 character long."
     );

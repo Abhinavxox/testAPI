@@ -32,19 +32,15 @@
    ```bash
    cd memory-in-the-shell
    ```
-3. Setup environment variables:
-   ```bash
-   cp .env.example .env
-   ```
-4. Build the Docker image:
+3. Build the Docker image:
    ```bash
    docker-compose build
    ```
-5. Start the Docker container:
+4. Start the Docker container:
    ```bash
    docker-compose up
    ```
-6. The server will be running on `http://localhost:{port}/api/v1/`.
+5. The server will be running on `http://localhost:{port}/api/v1/`.
 
 ---
 
@@ -66,6 +62,18 @@ curl -X GET "http://localhost:8080/api/v1/commands/?keyword=ls&details=true"
 
 - `keyword`: search keyword
 - `details`: (optional) set to `true` to get additional details of the command
+
+---
+
+## Additional Features
+
+### Error Handling:
+
+![image](https://github.com/user-attachments/assets/b9710d49-1328-4253-96d1-3b303f733367)
+
+### Detailed Command History:
+
+![image](https://github.com/user-attachments/assets/ce39a161-f333-4e4a-ba16-1566d4c6afea)
 
 ---
 
